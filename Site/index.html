@@ -11,88 +11,98 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href=""><img src="img/Logo Checkpoint.svg" alt=""></a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Funcionalidades</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">FAC</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href=""><img src="img/Instagram.png" alt=""></a></li>
-                <li><a href=""><img src="img/Facebook.png" alt=""></a></li>
-                <li><a href=""><img src="img/Twitter.png" alt=""></a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Cadastrar-se</a></li>
-                <li><a href=""><img src="img/Bandeira.png" alt=""></a></li>
+            <ul id="menu">
+                <li><img src="img/Ícone no começo.png" alt=""></li>
+                <li><a href="#" class="hover">Home</a></li>
+                <li><a href="#" class="hover">Funcionalidades</a></li>
+                <li><a href="#" class="hover">Planos</a></li>
+                <li><a href="#" class="hover">FAC</a></li>
+                <li><a href="#" class="hover">Contato</a></li>
+                <li></li>
+                <li><a href="https://www.instagram.com" target="blank"><img src="img/Instagram.png" alt=""></a></li>
+                <li><a href="https://www.Facebook.com" target="blank" id="juntar"><img src="img/Facebook.png" alt=""></a></li>
+                <li><a href="https://www.twitter.com" target="blank"><img src="img/Twitter.png" alt=""></a></li>
+                <li></li>
+                <li><a href="" class="hove">Login</a></li>
+                <li><a href="" class="hove">Cadastrar-se</a></li>
+                <li><img src="img/Bandeira.png" alt=""></li>
             </ul>
         </nav>
+        <img src="img/degrade superior.png" alt="" id="gradiente">
         <h1>Ponto Digital</h1>
     </header>
 
-    <section>
+    <section id="home">
         <img src="img/Logo no computador.png" alt="">
-        <h2>Gerencie a jornada de seus funcionários com <span>inteligência</span>e <span>eficiência</span></h2>
-        <p>O Ponto Digital é um site que promove o controle dos horários de trabalho de seus funcionários. Ele reduz erros nas contagens da empresa e permite a execução de tarefas com supervisão, assim, o trabalho se torna mais organizado e produtivo.</p>
+        <div>
+            <h4>Gerencie a jornada de seus funcionários com <span>inteligência</span> e <span>eficiência</span></h4>
+            <p>O Ponto Digital é um site que promove o controle dos horários de trabalho de seus funcionários. Ele reduz erros nas contagens da empresa e permite a execução de tarefas com supervisão, assim, o trabalho se torna mais organizado e produtivo.</p>
+        </div>
     </section>
     
-    <section>
+    <section id="funcionalidades">
         <div>
             <h2>Funcionalidades</h2>
-            <div>
+            <div class="flex">
                 <div>
-                    <h3>Onde estiver</h3>
-                    <p> On-line e funciona 24 horas por dias. Você pode acessar de onde estiver e puder</p>
+                    <div>
+                        <h3>Onde estiver</h3>
+                        <p> On-line e funciona 24 horas por dias. Você pode acessar de onde estiver e puder</p>
+                    </div>
+                    <div>
+                        <h3>Inteligente</h3>
+                        <p>Guarda suas informações automaticamente para evitar perdas</p>
+                    </div>
                 </div>
                 <div>
-                    <h3>Inteligente</h3>
-                    <p>Guarda suas informações automaticamente para evitar perdas</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <h3>Econômico</h3>
-                    <p>Comparado com os preçosdos concorrentes, o Ponto Digital é muito mais rentável </p>
-                </div>
-                <div>
-                    <h3>Organizado</h3>
-                    <p>Gera gráficos eficientes para mostrar o desempenho de seus funcionários</p>
+                    <div>
+                        <h3>Econômico</h3>
+                        <p>Comparado com os preços dos concorrentes, o Ponto Digital é muito mais rentável </p>
+                    </div>
+                    <div>
+                        <h3>Organizado</h3>
+                        <p>Gera gráficos eficientes para mostrar o desempenho de seus funcionários</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <img src="img/page.png" alt="">
+        <img src="img/page.png" alt="" id="menos">
     </section>
     
-    <section>
+    <section id="planos">
         <h2>Planos</h2>
-        <p>Faça seu cadastro abaixo para solicitar um plano ou deixar seu depoimento.</p>
-        <div>
-            <p>Free</p>
-            <p>R$ 0,00</p>
-            <p>Ideal para conhecer nosso produto.</p>
-            <p>Permite gerenciar 1 funcionário</p>
+        
+        <p class="letras">Faça seu cadastro abaixo para solicitar um plano ou deixar seu depoimento.</p>
+        <div class="flex">
+            <div class="cinza">
+                <p>Free</p>
+                <p>R$ 0,00</p>
+                <p>Ideal para conhecer nosso produto.</p>
+                <p>Permite gerenciar 1 funcionário</p>
+            </div>
+            <div class="branco">
+                <p>Basic</p>
+                <p>R$ 29,90</p>
+                <p>Ideal para pequenas empresas.</p>
+                <p>Permite gerenciar até 5 funcionários</p>
+                <p>R$5,98/func.</p>
+            </div>
+            <div class="branco">
+                <p> Advanced</p>
+                <p>R$ 149,90</p>
+                <p>Ideal para empresas de porte médio.</p>
+                <p>Permite gerenciar até 50 funcionários</p>
+                <p>R$2,99/func.</p>
+            </div>
+            <div class="azul">
+                <p>Professional</p>
+                <p>R$ 299,90</p>
+                <p>Ideal para empresas de grande porte.</p>
+                <p>Permite gerenciar até 300 funcionário</p>
+                <p>R$0,99/func.</p>
+            </div>
         </div>
-        <div>
-            <p>Basic</p>
-            <p>R$ 29,90</p>
-            <p>Ideal para pequenas empresas.</p>
-            <p>Permite gerenciar até 5 funcionários</p>
-            <p>R$5,98/func.</p>
-        </div>
-        <div>
-            <p> Advanced</p>
-            <p>R$ 149,90</p>
-            <p>Ideal para empresas de porte médio.</p>
-            <p>Permite gerenciar até 50 funcionários</p>
-            <p>R$2,99/func.</p>
-        </div>
-        <div>
-            <p>Professional</p>
-            <p>R$ 299,90</p>
-            <p>Ideal para empresas de grande porte.</p>
-            <p>Permite gerenciar até 300 funcionário</p>
-            <p>R$0,99/func.</p>
-        </div>
-        <p>Caso se faça necessário, fornecemos planos para mais funciona´rios. Ligue para (11) 9XXXX-XXXX</p>
+            <p class="letras">Caso se faça necessário, fornecemos planos para mais funcionários. Ligue para (11) 9XXXX-XXXX</p>
         <input type="submit" value="Adquira">
     </section>
     
@@ -140,7 +150,7 @@
 
     </section>
 
-    <section>
+    <section id="quem somos">
         <div>
             <h2>Quem somos?</h2>
             <p>A empresa <span>Agora Vai - Automação em Gestão de Projetos®</span> trabalha desde 1999 no ramo de desenvolvimento de sistemas voltados para gerência de projetos. Criaram produtos famosos como o <span>BioFacebook</span> e o <span>Crello</span>. A empresa foi fundada por Carlos Tsukamoto e César Sportore, amigos de turma na faculdade. Hoje em dia a empresa possui seu próprio escritório na Paulista e continua levando produtos de qualidade para o Brasil e o mundo.</p>
@@ -161,7 +171,7 @@
                 </div>
             </div>
         </div>
-        <img src="img/indianos.png" alt="">
+        <img src="img/indianos.png" alt="" id="programadores">
     </section>
 
 
@@ -184,17 +194,23 @@
         </div>
         </section>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.148645254728!2d-46.65657118502223!3d-23.563104284681987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1552313148597" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.148645254728!2d-46.65657118502223!3d-23.563104284681987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1552313148597" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen id="mapa"></iframe>
 
-    <footer>
+    <footer id="contatos">
         <h2>Contatos</h2>
         <address>
-            <img src="" alt="">
-            <p>(11)91234-5678</p>
-            <img src="" alt="">
-            <p>Agora vai</p>
-
+            <div class="flex">
+                <div class="flex1"><img src="img/Telefone.png" alt=""><p>(11)91234-5678</p></div>
+                <div class="flex1"><span>ddddddd</span><img src="img/Email.png" alt=""><p>agora.vai@gmail.com</p></div>
+                <div class="flex1"><img src="img/Localização.png" alt=""><p>Avenida Paulista, 0000</p></div>
+            </div>
+            <div class="flex">
+                <div class="flex1"><img src="img/Facebook contatos.png" alt=""><p>Agora vai</p></div>
+                <div class="flex1"><img src="img/Instagram.png" alt=""><p>Agora.Vai</p></div>
+                <div class="flex1"><img src="img/Twitter.png" alt=""><p>Agora_Vai</p></div>
+            </div>
         </address>
+        <img src="img/Finalizador degradê.png" alt="" id="finalizador">
     </footer>
 </body>
 </html>
