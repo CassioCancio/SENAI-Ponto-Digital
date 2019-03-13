@@ -5,7 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Google Sans Regular';
-    text-align: center
+    text-align: center;
+    outline: none;
+    border:none
 }
 #menu{
     display: flex;
@@ -45,7 +47,7 @@
 .hover:hover{
     color: white;
     background-color: #005eb9;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 .hove{
     color: #005eb6
@@ -53,7 +55,7 @@
 .hove:hover{
     color: white;
     background-color: #005eb9;
-    transition: 0.5s
+    transition: 0.25s
 }
 #gradiente{
     position: fixed;
@@ -136,6 +138,12 @@ h3{
 }
 .letras{
     font-size: 1.5em;
+    margin-top: 3vh
+}
+.letrass{
+    font-size: 1.5em;
+    margin-top: 4vh;
+    margin-bottom: 4vh
 }
 .cinza{
     box-shadow: 1px 1px 10px #888888,
@@ -144,6 +152,8 @@ h3{
     -1px -1px #333;
     border-radius: 25px;
     margin-top: 5vh;
+    height: 50vh;
+    background-color: #edeeee;
 }
 .branco{
     box-shadow: 1px 1px 10px #888888,
@@ -151,7 +161,8 @@ h3{
     1px -1px #333,
     -1px -1px #333;
     border-radius: 25px;
-    margin: 5vh 0;
+    margin: 5vh 0 0 0;
+    height: 50vh;
 }
 .azul{
     box-shadow: 1px 1px 10px #888888,
@@ -160,6 +171,156 @@ h3{
     -1px -1px #333;
     border-radius: 25px;
     margin-top: 5vh;
+    height: 50vh;
+    background-color: #ddedfd
+}
+.bold{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'sui generis';
+    margin: 4vh 0
+}
+.delimitar{
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.2em
+}
+#planos input{
+    width: 50%;
+    height: 5vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #555,
+                -1px 1px #555,
+                1px -1px #555,
+                -1px -1px #555;
+    border: none;
+    background: #ffffff;
+    font-size: 1.75em;
+    font-family: 'sui generis';
+    color: #005eb9;
+    -webkit-text-stroke-color:#000000;
+    -webkit-text-stroke-width: 1px;
+    margin-bottom: 15vh;
+}
+#planos input:hover{
+    background: #005eb9;
+    color: #fff;
+    transition: 0.25s
+}
+#cadastro{
+    display: flex;
+    justify-content: center
+}
+#cadastro h2{
+    margin: 0;
+}
+#cadastro p{
+    width: 75%;
+    margin: 2vh auto;
+}
+#cadastro img{
+    width: 35%
+}
+#cadastro > div > input{
+    width: 90%;
+    height: 5vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #555,
+                -1px 1px #555,
+                1px -1px #555,
+                -1px -1px #555;
+    border: none;
+    margin: 1.4vh 0;
+    font-size: 1.5em;
+    background-color: #edeeee;
+}
+#espaço{
+    margin-right: 15vh
+}
+#cadastro > div > div > input{
+    width: 43.5%;
+    height: 5vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #555,
+                -1px 1px #555,
+                1px -1px #555,
+                -1px -1px #555;
+    border: none;
+    margin: 1.4vh 0.9vh;
+    font-size: 1.5em;
+    background-color: #edeeee;
+}
+#cadastro h2{
+    margin-bottom: 5vh
+}
+#cadastro input[type="submit"]{
+    font-size: 1.75em;
+    font-family: 'sui generis';
+    color: #005eb9;
+    background-color: white;
+    margin-bottom: 5vh
+}
+#cadastro input[type="submit"]:hover{
+    color: white;
+    background-color: #005eb9;
+    transition: 0.25s
+}
+#depoimentos h2{
+    margin-bottom: 5vh
+}
+#depoimentos p{
+    font-size: 1.5em;
+}
+#depoimentos > div > p{
+    width: 70%;
+    margin: 4vh auto
+}
+#depoimento p{
+    width: 80%;
+    margin: 0vh 0 0 -1vh
+}
+#depoimento{
+    display: flex;
+    justify-content: center;
+}
+.bolder{
+    font-weight: bold
+}
+#depoimentos > div > div p{
+    text-align: left
+}
+#forms input,textarea{
+    width: 130%;
+    border-radius: 20px;
+    background-color: #edeeee;
+    margin-left: 18vh;
+    margin-top: 2vh;
+    box-shadow: 1px 1px 5px #555,
+    -1px 1px #555,
+    1px -1px #555,
+    -1px -1px #555;
+}
+#forms textarea{
+    height: 35vh;
+    padding: 2vh 2vh;
+    text-align: left;
+    font-size: 1.3em
+}
+#righter{
+    margin: 0 15vh 0 0vh
+}
+#forms input[type="submit"]{
+    height: 5vh;
+    color: #005eb9;
+    background: #ffffff;
+    font-family: 'sui generis';
+    font-size: 2em;
+}
+#depoimentos img{
+    margin: 2vh 0 2vh 60vh
+}
+#right{
+    margin-left: 5vh
 }
 #menos{
     width: 40%;
@@ -199,6 +360,17 @@ h3{
     width: 90%;
     margin: 0 auto;
     align-items: center
+}
+.flexq{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.flexc{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
 }
 .flex1{
     display: flex;
