@@ -23,7 +23,7 @@
                 <li><a href="https://www.Facebook.com" target="blank" id="juntar"><img src="img/Facebook.png" alt=""></a></li>
                 <li><a href="https://www.twitter.com" target="blank"><img src="img/Twitter.png" alt=""></a></li>
                 <li></li>
-                <li><a href="" class="hove">Login</a></li>
+                <li class="hove log" id="oi">Login</li>
                 <li><a href="" class="hove">Cadastrar-se</a></li>
                 <li><img src="img/Bandeira.png" alt=""></li>
             </ul>
@@ -33,7 +33,7 @@
     </header>
 
     <section id="home">
-        <img src="img/Logo no computador.png" alt="">
+        <img src="img/Logo no computador.png" class="computadorrr" alt="">
         <div>
             <h4>Gerencie a jornada de seus funcionários com <span>inteligência</span> e <span>eficiência</span></h4>
             <p>O Ponto Digital é um site que promove o controle dos horários de trabalho de seus funcionários. Ele reduz erros nas contagens da empresa e permite a execução de tarefas com supervisão, assim, o trabalho se torna mais organizado e produtivo.</p>
@@ -133,7 +133,7 @@
         </div>
         <div id="depoimento">
             <div id="forms">
-                <textarea></textarea>
+                <textarea placeholder="Escreva sua mensagem"></textarea>
                 <input type="submit">
             </div>
             <div id="righter">
@@ -155,24 +155,27 @@
         </div>
     </section>
 
-    <section id="quem somos">
-        <div>
-            <h2>Quem somos?</h2>
-            <p>A empresa <span>Agora Vai - Automação em Gestão de Projetos®</span> trabalha desde 1999 no ramo de desenvolvimento de sistemas voltados para gerência de projetos. Criaram produtos famosos como o <span>BioFacebook</span> e o <span>Crello</span>. A empresa foi fundada por Carlos Tsukamoto e César Sportore, amigos de turma na faculdade. Hoje em dia a empresa possui seu próprio escritório na Paulista e continua levando produtos de qualidade para o Brasil e o mundo.</p>
-        </div>
-        <div>
-            <div>
-                <img src="img/Carlos.png" alt="">
-                <div>
-                    <p>Fundador</p>
-                    <p>Carlos Tsukamoto</p>
-                </div>
+    <section id="quem_somos">
+        <div class="flexq">
+            <div class="lar">
+                <h2>Quem somos?</h2>
+                <p>A empresa <span>Agora Vai - Automação em Gestão de Projetos®</span> trabalha desde 1999 no ramo de desenvolvimento de sistemas voltados para gerência de projetos. Criaram produtos famosos como o <span>BioFacebook</span> e o <span>Crello</span>. A empresa foi fundada por Carlos Tsukamoto e César Sportore, amigos de turma na faculdade. Hoje em dia a empresa possui seu próprio escritório na Paulista e continua levando produtos de qualidade para o Brasil e o mundo.</p>
             </div>
             <div>
-                <img src="img/César.png" alt="">
-                <div>
-                    <p>Co-Fundador</p>
-                    <p>César Sportore</p>
+                <div class="flexqc">
+                    <img src="img/Carlos.png" alt="">
+                    <div class="correcao">
+                        <p>Fundador</p>
+                        <p>Carlos Tsukamoto</p>
+                    </div>
+                </div>
+                <div class="flexqc">
+                    <img src="img/César.png" alt="">
+                    <div class="correcao">
+                        <p>Co-fundador</p>
+                        <p>César Sportore</p>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -182,20 +185,22 @@
 
     <section>
         <h2>Perguntas Frequentes</h2>
-        <img src="" alt="">
+        <img src="img/Boneco.png" alt="">
     </section>
 
-    <section>
+    <section id="sac">
         <h2>SAC</h2>
-        <div>
-            <input type="text">
-            <input type="e-mail">
-            <input type="tel">
-            <input type="text">
-        </div>
-        <div>
-            <input type="text">
-            <input type="submit">
+        <div class="flex2">
+            <div class="colu">
+                <input type="text" placeholder="Nome">
+                <input type="e-mail" placeholder="E-mail">
+                <input type="tel" placeholder="Telefone">
+                <input type="text" placeholder="Assunto">
+            </div>
+            <div class="colu ma">
+                <textarea placeholder="Escreva sua mensagem"></textarea>
+                <input type="submit">
+            </div>
         </div>
         </section>
 
@@ -217,5 +222,35 @@
         </address>
         <img src="img/Finalizador degradê.png" alt="" id="finalizador">
     </footer>
+
+    <section class="darker x">
+        <div class="login">
+            <img src="img/back-x-md.png" alt="" class="point">
+            <h2>Login</h2>
+            <input type="text" placeholder="E-mail">
+            <input type="password" placeholder="Senha"><br><br><br>
+            <a href="">Esqueceu sua senha?</a><br><br><br>
+            <input type="submit" value="Enviar ">
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                var login = $('.darker');
+                var botao = $('.log');
+                botao.on('click',function () {
+                    login.toggleClass("active");
+                    login.removeClass("darker")
+                });
+            });
+            $(function () {
+                var crs = $('.x');
+                var de = $('.point');
+                de.on('click',function () {
+                    crs.toggleClass("darker");
+                    crs.removeClass("active")
+                });
+            });
+        </script>
+    </section>
 </body>
 </html>
