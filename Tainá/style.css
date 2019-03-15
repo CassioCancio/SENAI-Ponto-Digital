@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 3.5vh 0 3.5vh 0;
+    width: 100%;
+    background-color: black;
+    margin-bottom: -;
+    position: fixed 
+}
+#menu a{
+    color: white;
+    font-size: 1.6em;
+    font-family: 'Sui Generis'
+}
+#menu a:hover{
+    color: #005eb9;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.5px;
+}
+#espa{
+    height: 9.8vh;
+}
+.imagem1{
+    width: 100%;
+    animation: ani 2s linear;
+    z-index: 1;
+}
+#imag{
+    background-color: black;
+
+}
+      @keyframes ani {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    
+.imagem2{
+    width: 100%
+}
+.imagem3{
+    width: 100%
+}
+#logo{
+    width: 100%;
+    background: #ffa700;
+    font-family: 'sui generis';
+    font-size: 3.5em;
+    color:#005ebd;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    text-align: left;
+    padding: 3vh 0 3vh 15vh;
+}
+h2{
+    font-family: 'Sui Generis';
+    font-size: 3em;
+    padding: 4%;
+    color: #005eb9;
+}
+#produto{
+    max-width: 1300px;
+    width: 90%;
+    margin: auto;
+}
+#produto p{
+    font-size: 1.8em;
+    padding-bottom: 4%;
+    margin-bottom: 5%;
+}
+#funcionamento{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3em;
+    margin-bottom: 5% 
+}
+h3{
+    color: #f2a620;
+    padding-bottom: 3%;
+    font-size: 2em;
+    font-family: 'Sui Generis';
+    align-items: center;
+}
+.bola{
+    padding: 5%;
+}
+.bola p{
+    font-size: 1.3em;
+}
+.imagem{
+    margin-top: 16%;
+    padding-bottom: 9%;
+}
+.imagens{
+    margin-top: 16%;
+    padding-bottom: 9%;
+}
+.imagemm{
+    margin-top: 16%;
+    padding-bottom: 9%;
+}
+#planos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.a1 {
+    box-shadow: 1px 1px black, 
+               -1px 1px black,
+               1px -1px black,
+              -1px -1px black;
+              width: 20%;
+              height: 70vh;
+        margin-top: 3%; 
+        
+    }
+    .a1 h4{
+        font-size: 2.8em;
+        padding: 7%;
+        color: #005eb9;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px;
+        font-family: 'Sui Generis';
+    }
+    .a1 p{
+        font-size: 1.8em;
+        padding: 6%;
+    }
+    .a2 {
+        box-shadow: 1px 1px black, 
+        -1px 1px black,
+        1px -1px black,
+        -1px -1px black;
+        width: 20%;
+        height: 70vh;
+        margin-top: 3%; 
+    }
+    .a2 h4{
+        font-size: 2.8em;
+        padding: 7%;  
+        color: #005eb9;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px;
+        font-family: 'Sui Generis';
+    }
+    .a2 p{
+        font-size: 1.8em;
+        padding: 6%;
+    }
+    .a3 {
+        box-shadow: 1px 1px black, 
+        -1px 1px black,
+        1px -1px black,
+        -1px -1px black;
+        width: 20%;
+        height: 70vh;
+        margin-top: 3%; 
+    }
+    .a3 h4{
+        font-size: 2.8em;
+        padding: 7%;  
+        color: #005eb9;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px;
+        font-family: 'Sui Generis';
+    }
+    .a3 p{
+        font-size: 1.8em;
+        padding: 6%;
+    }
+    .a4{
+        background:  #005eb9;
+        color: #f2a620;
+        width: 20%;
+        height: 70vh;
+        margin-top: 3%;
+        padding-top: 18vh; 
+        font-size: 3.9em; 
+        font-family: 'Sui Generis';
+    }
+    #spn{
+        color: #f2a620;
+        font-size: 2.6em;
+        font-family: 'calibri';
+    }
+    article a{
+        font-size: 1.8em;
+        background-color: #005eb9;
+        padding: 3vh 10vh;
+        border-radius: 5%;
+        color: white;
+    }
+    .foto{
+        width: 20%;
+        height: 20%;
+        border-radius: 30%;
+        }
+    .papa{
+        margin: 5vh 0
+    }
+    #comentarios h2{
+        margin: 5%;
+    }
+    .flexii{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center
+    }
+    .flexiiii{
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .flexiiii p{
+        margin: 0 0 0 5vh;
+        font-size: 2em;
+        text-align: left
+    }
+    #arrumar{
+        width: 30%;
+        height: 30%;
+    }
+    .left{
+        padding-left: -5vh
+    }
+    #SAC h2{
+        margin-top: 13%;
+        margin-bottom: 4%;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        max-width: 1400px;
+        width: 90%;
+        margin: auto;
+    }  
+    .bla input{
+        width: 60vh;
+        height: 5vh;
+        margin: 1%;
+    }   
+    ::placeholder{
+        text-align: left;
+        font-size: 1.5em;
+    }   
+    .submitt{
+        width: 20%;
+        height: 7vh;
+        border-radius: 10px;
+        background-color: #f2a620;
+        font-size: 1.2em;
+        margin-left: auto;
+        margin-right: 7.5%;
+        margin-top: 2%;
+        
+    }
+    #quemsomos h2{
+        color: white;
+        padding-bottom: 4%
+    } 
+    #quemsomos img{
+        width: 12%;
+        height: 12%;
+        padding: 4% 1% 4% 1%; 
+    }  
+    #quemsomos p{
+        font-size: 1.8em;
+        color: white;
+        width: 65%;
+        margin: 0 auto
+    } 
+    #quemsomos{
+        margin: auto;
+        margin-top: 15%;
+        background-color: #005eb9;
+        background-size: cover;
+        padding-bottom: 10%;
+        width: 100%
+    }    
+    #cadastro h2{
+        margin: 5%;
+    }   
+    #cadastro h3{
+        font-size: 2.5em;
+    } 
+     .cad{
+         display: flex;
+         flex-direction: column;
+     }   
+     .cad input{
+         height: 5vh;
+         width: 60vh;
+         margin: 2.5%;
+         font-size: 0.7em;
+     }
+    .amem{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1400px;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 15%;
+  
+    }
+    .submittt{
+        border-radius: 10px;
+        background-color: #f2a620;
+        -webkit-border-before-width: 1px;
+        -webkit-border-before-color: black;
+
+    }
+    footer{
+        background-color: #005eb9;
+    }
+    address{
+        font-size: 1.6em;
+        color: white;
+        text-align: left
+    }
+    #idiomas{
+        height: 7vh;
+        width: 20%;
+        font-size: 1.3em;
+        margin: 3%;
+    }
+
+    #rodape{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%
+    }
+    #oi img{
+        height: 4vh;
+        margin: 0 2vh
+    }
+    @media screen and (max-width:1366px){
+        #menu a{
+            color: white;
+            font-size: 1.3em;
+            font-family: 'Sui Generis'
+        }
+        .bola p{
+            font-size: 1.2em
+        }
+        .imagem{
+          width: 50%;
+        }
+        .imagens{
+            width: 60%;
+            margin-top: 16%;
+        }
+        .imagemm{
+            width: 50%;
+            margin-top: 12%;
+        }
+        h3{
+            font-size: 1.8em;
+            align-items: center;
+        }
+    }
+    @media screen and (max-width:1000px){
+        #menu a{
+            color: white;
+            font-size: 1em;
+            font-family: 'Sui Generis'
+        }
+        h2{
+            font-size: 2.8em;
+        }
+        #produto p{
+            font-size: 1.6;
+        }
+      #funcionamento{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+      }
+      .imagem{
+        width: 30%;
+      }
+      .imagens{
+          width: 40%;
+          margin-top: 16%;
+      }
+      .imagemm{
+          width: 30%;
+          margin-top: 12%;
+      }
+    }
+    @media screen and (max-width:768px){
+
+    }
+    @media screen and (max-width:360px){
+
+    }
+
+  
+    
+    

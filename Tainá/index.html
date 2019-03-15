@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto Digital</title>
+    <link rel="stylesheet" href="style.css">
+        <header>
+            <div id="back">
+                <nav>
+                    <ul id="menu">
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#plano">Planos</a> </li>
+                        <li> <a href="#quemsomos">Quem somos?</a> </li>
+                        <li> <a href="#">SAC</a> </li>
+                        <li> <a href="#">Depoimentos</a> </li>
+                        <li> <a href="#">Contatos</a> </li>
+                        <li> <a href="#">Cadastro</a> </li>
+                        <li> <a href="#">Login</a> </li>
+                    </ul>
+                </nav>
+                <div id="espa"></div>
+                <div id="imag">
+                    <img src="img/banner ponto digital.png" alt="" class="imagem1">
+                    <img src="img/banner ponto digital - Copia.png" alt="" class="imagem1 w3-animate-top">
+                    <img src="img/banner ponto digital - Copia (2).png" alt="" class="imagem1">
+                </div>
+                    <p id="logo">Ponto digital</p>
+            </div>
+            </header>
+        </head>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("imagem1");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 10000);   
+            }
+        </script>
+<body>      
+    <main>
+        <div>
+                    <br><br><br><br>
+                    <section id="produto">
+                <h2>Ponto Digital</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus inventore, 
+                    sint earum quod aspernatur facere ratione magnam culpa laboriosam molestiae recusandae amet incidunt temporibus, 
+                    hic vero ut reiciendis quis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, consequatur quam! Cum perspiciatis sit dolor facilis, sint dolorum architecto? Rerum eius sint laborum excepturi ad suscipit vel minima? Commodi, animi!</p>
+                </section>
+                <img src="img/linha descrição .png" alt="linha">
+                <section id="funcionamento">
+                    
+                    <article class="bola">
+                        <img class="imagens" src="img/Camada 0.png" alt="">
+                        <h3>Subtitulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis ipsa quid Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, deserunt? Facere laboriosam voluptatum </p>
+                    </article>
+                    
+                    <article class="bola">
+                        <img class="imagem" src="img/Camada 01.png" alt="">
+                        <h3>Subtitulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis ipsa quid Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam excepturi, distinctio esse cupiditate numquam </p>
+                    </article>
+                    
+                    <article class="bola">
+                        <img class="imagemm" src="img/Camada 02.png" alt="">
+                        <h3>Subtitulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis ipsa quid Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat, accusantium nesciunt</p>
+                    </article>
+                    
+                </section>
+
+            </div>
+        
+            <h2 id="plano">Conheça nossos planos</h2>
+            <section id="planos">
+            
+            <article class="a1">
+                <h4>Basic</h4>
+                <p>R$ <span id="spn"> 29,90</span></p>
+                <p>Ideal para pequenas empresas
+                <br> Permite gerenciar 
+                até 5 funcionários</p>
+                <br> <br> <br> <br> <br> <br>  <br> <br>
+                <a href="#">Gerar pedido</a>
+            </article>
+
+            <article class="a2">
+                 <h4>Advanced</h4>
+                 <p>R$ <span id="spn">149,90</span></p>
+                <p>Ideal para empresas de porte médio
+                <br> Permite gerenciar 
+                até 50 funcionários</p>
+                <br> <br> <br> <br> <br><br> <br> <br>
+                <a href="#">Gerar pedido</a>
+                </article>
+            
+            <article class="a3">
+               <h4>Professional</h4>
+               <p>R$<span id="spn">299,90</span></p>
+               <p>Ideal para empresas de grande porte
+               <br> Permite gerenciar 
+               até 300 funcionários</p>
+               <br> <br> <br> <br> <br> <br> <br> <br>
+               <a href="#">Gerar pedido</a>
+             </article>
+             
+             <article class="a4">
+                 <p> Teste <br> grátis por <br> 30 dias!</p>
+                </article>
+            </section>
+                
+
+        <section id="comentarios">
+            <h2>Comentários</h2>
+            <div class="flexii">
+                <div>
+                    <div class="papa flexiiii left">
+                        <img class="foto" src="img/20190301-gloria-maria-2018-220171204_0003.jpg" alt="">
+                        <p> Julia Maria <br><br> Muito íncrivel, excelente!</p>
+                    </div>
+                    <div class="papa flexiiii esquerda">
+                        <img class="foto" src="img/20190301-gloria-maria-2018-220171204_0003.jpg" alt="">
+                        <p>Gloria Pereira <br><br> Amei o site</p>
+                    </div>
+                </div>
+                <img src="img/jaca.png" alt="funcionarios" id="arrumar">
+            </div>
+        </section>
+
+        <section id="SAC">
+            <h2>Converse conosco! <br> Deixe seu comentário e tire suas dúvidas aqui</h2>
+
+            <form class="form" action="#" method="POST">
+                <div class="bla">
+                    <input type="text" name="nome" maxlength="50" placeholder="Nome Completo" required>
+                    <input type="tel" name="tel" maxlength="20" placeholder="Telefone" required>
+                </div>
+                <div class="bla">
+                    <input type="e-mail" name="e-mail" maxlength="50" placeholder="E-mail" required>
+                    <input type="text" name="mensagem" maxlength="500" placeholder="Mensagem" required>
+                </div>
+
+                <input class="submitt" type="submit">
+            </form>
+        </section>
+
+        <section id="quemsomos">
+            <h2>Quem somos?</h2>
+            <img src="img/Carlos.png" alt="">
+            <img src="img/César.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde fugit aperiam cum, saepe ad perspiciatis, 
+            delectus voluptatum voluptatibus excepturi quasi nihil ea? Laudantium magni aliquam delectus molestiae vitae sint velit!</p>
+        </section>
+
+        <section id="cadastro">
+            <h2>Faça seu pedido aqui</h2>
+            <div>
+
+                <div class="amem">
+                    <div>
+                        <h3>Cadastre-se</h3>
+                        <div class="cad">
+                            
+                            <input type="text" name="nome" placeholder="Nome Completo" maxlength="50" required>
+                    
+                            <input type="tel" name="tel" placeholder="Telefone" maxlength="20" required>
+                            
+                            <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>
+                        
+                            <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
+                            <input class="submittt" type="submit">
+                        </div>
+                    </div>
+                    
+                    <div class="cad">
+                    <h3>Login</h3>
+                        
+                        <input type="text" name="nome" placeholder="Nome Completo" maxlength="50" required>
+                        
+                        <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>
+                        
+                        <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
+                                
+                                <input class="submittt" type="submit">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                
+        <footer id="contatos">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0658301189687!2d-46.65298398538392!3d-23.566079067650772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1552524439656" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div id="rodape">
+
+                <address>
+                    <p>Agora vai!</p>
+                    <p>email.pontodigital@gmail.com</p>
+                    <p>Avenida Paulista</p>
+                    <p>(11) 1234-5678</p>
+                </address>
+                
+                <div id="oi">
+                    <a href="https://www.facebook.com/"><img class="face" src="img/ico_facebook.png" alt=""/></a>
+                    <a href="https://www.instagram.com"><img class="pic" src="img/ico_instagram.png" alt=""/></a>
+                    <a href="https://twitter.com"><img class="pic" src="img/ico_twitter.png" alt=""/></a>
+                </div>
+                    
+                <select id="idiomas">
+                    <option value="" disabled selected>Idiomas</option>
+                    <option value="ingles">Inglês</option>
+                    <option value="espanhol">Espanhol</option>
+                    <option value="portugues">Português</option>
+                    <option value="frances">Francês</option>
+                    <option value="alemao">Alemão</option>
+                    <option value="japones">Japones</option>
+                </select>
+                
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
