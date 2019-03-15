@@ -28,14 +28,14 @@
 #espa{
     height: 9.8vh;
 }
+#imag{
+    background-color: black;
+
+}
 .imagem1{
     width: 100%;
     animation: ani 2s linear;
     z-index: 1;
-}
-#imag{
-    background-color: black;
-
 }
       @keyframes ani {
         0% {

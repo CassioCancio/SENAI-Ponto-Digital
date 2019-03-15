@@ -9,6 +9,15 @@
     outline: none;
     border:none
 }
+header{
+    animation: anima  0.5s linear;
+}
+html {
+    scroll-behavior: smooth;
+}  
+ul li{
+    cursor: pointer;
+}
 input,textarea{
     text-align: left;
     padding-left: 2vh
@@ -24,9 +33,9 @@ span{
     display: flex;
     justify-content: space-between;
     box-shadow: 1px 1px 10px #888888,
-                -1px 1px #333,
-                1px -1px #333,
-                -1px -1px #333;
+    -1px 1px #333,
+    1px -1px #333,
+    -1px -1px #333;
     border-radius: 20px;
     background: #ffffff;
     align-items: center;
@@ -81,8 +90,11 @@ span{
     height: 15vh;
     width: 100%
 }
+#ei{
+    animation: anima  0.5s linear;
+}
 h1{
-    margin-top: 15vh;
+    margin-top: 12vh;
     margin-bottom: 4vh;
     font-size: 5.5em;
     text-align: center;
@@ -97,7 +109,7 @@ h2{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000000;
     color: #005eb9;
-    margin-top: 10vh;
+    margin-top: 6vh;
     font-size: 3em
 }
 h3{
@@ -113,7 +125,16 @@ h3{
     width: 57.5%;
     height: 60%;
     margin: 0 auto;
-    margin: 3vh 0 0 5vh
+    margin: 4vh 0 0 5vh;
+    animation: anima  0.5s linear;
+}
+#b{
+    position: absolute;
+    top: 84vh
+}
+#c{
+    position: absolute;
+    top: 173vh
 }
 #home p{
     width: 70%;
@@ -121,9 +142,9 @@ h3{
     font-size: 1.6em
 }
 #home h4{
-    margin: 16vh 0 3vh 0;
-    font-size: 1.6em;
-    width: 75%;
+    margin: 17vh 0vh 3vh -8vh;
+    font-size: 1.8em;
+    width: 90%;
     text-align: center;
     font-family: 'Sui Generis';
 }
@@ -171,7 +192,8 @@ h3{
     margin-top: 5vh;
     height: 50vh;
     background-color: #edeeee;
-    transition: 0.25s
+    transition: 0.25s;
+    color: #000000
 }
 .cinza:hover{
     box-shadow: 1px 1px 25px #888888,
@@ -187,7 +209,8 @@ h3{
     border-radius: 25px;
     margin: 5vh 0 0 0;
     height: 50vh;
-    transition: 0.25s
+    transition: 0.25s;
+    color: #000000
 }
 .branco:hover{
     box-shadow: 1px 1px 25px #888888,
@@ -204,7 +227,8 @@ h3{
     margin-top: 5vh;
     height: 50vh;
     background-color: #ddedfd;
-    transition: 0.25s
+    transition: 0.25s;
+    color: #000000
 }
 .azul:hover{
     box-shadow: 1px 1px 25px #888888,
@@ -216,29 +240,15 @@ h3{
     font-size: 2em;
     font-weight: bold;
     font-family: 'sui generis';
-    margin: 4vh 0
+    padding: 3vh 0
 }
 .delimitar{
     width: 95%;
     margin: 0 auto;
     font-size: 1.2em
 }
-#planos input{
-    width: 50%;
-    height: 5vh;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px #555,
-                -1px 1px #555,
-                1px -1px #555,
-                -1px -1px #555;
-    border: none;
-    background: #ffffff;
-    font-size: 1.75em;
-    font-family: 'sui generis';
-    color: #005eb9;
-    -webkit-text-stroke-color:#000000;
-    -webkit-text-stroke-width: 1px;
-    margin-bottom: 15vh;
+#planos{
+    padding-bottom: 12.5vh
 }
 #planos input:hover{
     background: #005eb9;
@@ -247,7 +257,9 @@ h3{
 }
 #cadastro{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 15vh
 }
 #cadastro h2{
     margin: 0;
@@ -271,6 +283,10 @@ h3{
     margin: 1.4vh 0;
     font-size: 1.5em;
     background-color: #edeeee;
+}
+#d{
+    position: absolute;
+    top: 266vh
 }
 #espaço{
     margin-right: 15vh
@@ -407,12 +423,13 @@ h3{
 }
 #programadores{
     width: 100%;
-    margin-top: 3vh
+    margin-top: 4vh;
+    margin-bottom: 5vh
     /* background: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)); */
 }
 #sac{
-    padding: 0 0 4vh 0;
-    margin: 0 0 1px 0;
+    padding: 5vh 0 4vh 0;
+    margin: 5vh 0 1px 0;
     box-shadow: 1px 1px #000000
 }
 #sac input{
@@ -428,6 +445,10 @@ h3{
     background-color: #edeeee;
 }
 #sac input:focus{
+    background-color: #fff;
+    transition: 0.25s;
+}
+#sac textarea:focus{
     background-color: #fff;
     transition: 0.25s;
 }
@@ -475,11 +496,15 @@ h3{
     color: #888888;
     font-size: 2.6em
 }
+#qwertg{
+    margin: 0vh 0 -5vh 0;
+    opacity: 0;
+}
 #sac h2{
     margin: 8vh 0 6vh 0
 }
 #mapa{
-    margin-bottom: -10.4vh;
+    margin-bottom: -6.4vh;
 }
 #contatos{
     box-shadow: -1px -1px #000000;
@@ -496,6 +521,10 @@ h3{
 #contatos span{
     color:#fff
 }
+#f{
+    position: absolute;
+    top: 590vh
+}
 #contatos h2{
     padding: 3vh;
     font-size: 2.2em;
@@ -508,6 +537,13 @@ h3{
     margin: 0 auto;
     align-items: center
 }
+.flexfg{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    align-items: flex-start;
+}
 .flexq{
     display: flex;
     justify-content: center;
@@ -519,9 +555,28 @@ h3{
     flex-direction: row;
     align-items: center
 }
+.flexa{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    margin: 4vh 0 0 0;
+    font-size: 2em;
+}
+.flexa img{
+    width: 5vh;
+    margin-right: 2vh
+}
 .colu{
     display: flex;
     flex-direction: column
+}
+.vlw{
+    margin: 0 0vh 0 25vh
+}
+#bonequinho{
+    width: 20%;
+    margin-right: 20vh
 }
 .flexc{
     display: flex;
@@ -562,7 +617,8 @@ h3{
                 -1px -1px #333;
     position: fixed;
     top: -33.5%;
-    left: 37.5%
+    left: 37.5%;
+    animation: anim 0.1s ease-in-out;
 }
 .login input[type="submit"]{
     font-size: 1.75em;
@@ -618,7 +674,8 @@ h3{
     position: fixed;
     top: 0;
     z-index: 300;
-    display: none
+    display: none;
+    animation: anim 0.1s ease-in-out;
 }
 .active{
     width: 100%;
@@ -627,7 +684,62 @@ h3{
     position: fixed;
     top: 0;
     z-index: 300;
+    animation: anim 0.1s ease-in-out;
 }
 .login img{
     z-index: 1000;
 }
+#werty h2{
+    margin-bottom: 12vh
+}
+.apear{
+    margin-left: 6vh;
+    animation: anim 1s linear
+}
+.plm{
+    display: none
+}
+.pln{
+    display: none
+}
+.plo{
+    display: none
+}
+.plp{
+    display: none
+}
+.fg{
+    display: block
+}
+.apear p{
+    text-align: left;
+    font-size: 1.75em;
+    margin: 1.5vh 0;
+    width: 85%
+}
+#werty span{
+    color: #000000
+}
+#werty p{
+    color: #005eb9
+}
+.flexa > h4{
+    font-weight: 575;
+    color: #444444;
+}
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    }
+@keyframes anima {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    }
