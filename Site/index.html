@@ -118,16 +118,20 @@
     <section id="cadastro" class="flex">
         <div id="espaço">
             <h2>Cadastro</h2>
-            <input type="text" placeholder="Nome">
-            <input type="email" placeholder="E-mail">
-            <div class="flexq">
-                <input type="number" placeholder="CPF">
-                <input type="date" placeholder="Nascimento">
+            <div>
+                <form method="GET">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <div class="flexq">
+                        <input type="number" placeholder="CPF" required>
+                        <input type="date" placeholder="Nascimento" required>
+                    </div>
+                    <input type="password" placeholder="Crie uma senha*" required>
+                    <input type="password" placeholder="Repita sua senha" required>
+                    <p>* Sua senha deve conter ao menos 8 caracteres, uma letra maiúscula e um número.</p>
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
-            <input type="password" placeholder="Crie uma senha*">
-            <input type="password" placeholder="Repita sua senha">
-            <p>* Sua senha deve conter ao menos 8 caracteres, uma letra maiúscula e um número.</p>
-            <input type="submit" value="Enviar">
         </div>
         <img src="img/Moldura do celular.png" alt="">
     </section>
@@ -139,9 +143,11 @@
             <p class="bolder">- João da Silva Souza -</p>
         </div>
         <div id="depoimento">
-            <div id="forms">
-                <textarea placeholder="Escreva sua mensagem"></textarea>
-                <input type="submit">
+            <div>
+                <form method="get" id="forms">
+                    <textarea required placeholder="Escreva sua mensagem"></textarea>
+                    <input type="submit">
+                </form>
             </div>
             <div id="righter">
                 <div class="flexc">
@@ -194,10 +200,10 @@
         <div class="flexfg">
             <div class="vlw">
                 <div>    
-                    <div class="flexa">
-                        <img src="img/Flecha preta.png" alt="" class="dfh"><h4>Uso do Ponto Digital</h4>
+                    <div class="flexa dfh">
+                        <img src="img/Flecha preta.png" alt=""><h4>Uso do Ponto Digital</h4>
                     </div>
-                    <span class="pln y">    
+                    <span class="pln z">    
                             <div class="apear">
                                 <p>1. Número de Contato- <span>O número de contato da empresa está disponível no rodapé do site (11 9XXXX-XXXX)</span></p>
                                 <p>2. Redes Socias- <span>A empresa possui conta no Twitter, Instagram e Facebook. Recomendamos que nos sigam porque postamos diversas novidades e atualizações de nossos produtos.</span></p>
@@ -206,10 +212,10 @@
                             </div>
                         </span>
                 </div>
-                <div class="flexa">
+                <div class="flexa dfd">
                     <img src="img/Flecha preta.png" alt=""><h4>Pagamentos</h4>
                 </div>
-                <span class="plo y">    
+                <span class="plo a">    
                         <div class="apear">
                             <p>1. Número de Contato- <span>O número de contato da empresa está disponível no rodapé do site (11 9XXXX-XXXX)</span></p>
                             <p>2. Redes Socias- <span>A empresa possui conta no Twitter, Instagram e Facebook. Recomendamos que nos sigam porque postamos diversas novidades e atualizações de nossos produtos.</span></p>
@@ -218,8 +224,8 @@
                         </div>
                     </span>
                 <div>
-                    <div class="flexa">
-                        <img src="img/Flecha preta.png" alt="" class="dfg"><h4>Suporte</h4>
+                    <div class="flexa dfg">
+                        <img src="img/Flecha preta.png" alt="" ><h4>Suporte</h4>
                     </div>
                     <span class="plm y">    
                         <div class="apear">
@@ -230,10 +236,10 @@
                         </div>
                     </span>
                 </div>
-                <div class="flexa">
+                <div class="flexa dsa">
                     <img src="img/Flecha preta.png" alt=""><h4>Solução de problemas</h4>
                 </div>
-                <span class="plp y">    
+                <span class="plp r">    
                         <div class="apear">
                             <p>1. Número de Contato- <span>O número de contato da empresa está disponível no rodapé do site (11 9XXXX-XXXX)</span></p>
                             <p>2. Redes Socias- <span>A empresa possui conta no Twitter, Instagram e Facebook. Recomendamos que nos sigam porque postamos diversas novidades e atualizações de nossos produtos.</span></p>
@@ -248,18 +254,18 @@
 
     <section id="sac">
         <h2>SAC</h2>
-        <div class="flex2">
-            <div class="colu">
-                <input type="text" placeholder="Nome">
-                <input type="e-mail" placeholder="E-mail">
-                <input type="tel" placeholder="Telefone">
-                <input type="text" placeholder="Assunto">
-            </div>
-            <div class="colu ma">
-                <textarea placeholder="Escreva sua mensagem"></textarea>
-                <input type="submit">
-            </div>
-        </div>
+                <form action="" method="get" class="colu flex2">
+                    <div class="colu">
+                        <input type="text" placeholder="Nome" required>
+                        <input type="e-mail" placeholder="E-mail" required>
+                        <input type="tel" placeholder="Telefone" required>
+                        <input type="text" placeholder="Assunto" required>
+                    </div>
+                    <div class="colu ma">
+                        <textarea placeholder="Escreva sua mensagem" required></textarea>
+                        <input type="submit" get>
+                    </div>
+                </form>
         </section>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.148645254728!2d-46.65657118502223!3d-23.563104284681987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1552313148597" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen id="mapa"></iframe>
@@ -310,23 +316,6 @@
             });
         </script>
 
-        <script>
-            $(function () {
-                var login = $('.plm');
-                var botao = $('.dfg');
-                botao.on('click',function () {
-                    login.toggleClass("fg");
-                    login.removeClass("plm")
-                });
-            });
-            $(function () {
-                var login = $('.y');
-                var botao = $('.dfg');
-                botao.on('click',function () {
-                    login.toggleClass("plm");
-                });
-            });
-        </script>
 
         <script>
             $(function () {
@@ -334,7 +323,6 @@
                 var botao = $('.dfh');
                 botao.on('click',function () {
                     login.toggleClass("fg");
-                    login.removeClass("pln")
                 });
             });
             $(function () {
@@ -351,8 +339,7 @@
                 var login = $('.plm');
                 var botao = $('.dfg');
                 botao.on('click',function () {
-                    login.toggleClass("fg");
-                    login.removeClass("plm")
+                    login.toggleClass("fh");
                 });
             });
             $(function () {
@@ -366,18 +353,34 @@
 
         <script>
             $(function () {
-                var login = $('.plm');
-                var botao = $('.dfg');
+                var login = $('.plo');
+                var botao = $('.dfd');
                 botao.on('click',function () {
-                    login.toggleClass("fg");
-                    login.removeClass("plm")
+                    login.toggleClass("fi");
                 });
             });
             $(function () {
-                var login = $('.y');
-                var botao = $('.dfg');
+                var login = $('.a');
+                var botao = $('.dfd');
                 botao.on('click',function () {
-                    login.toggleClass("plm");
+                    login.toggleClass("plo");
+                });
+            });
+        </script>
+
+        <script>
+            $(function () {
+                var login = $('.plp');
+                var botao = $('.dsa');
+                botao.on('click',function () {
+                    login.toggleClass("fj");
+                });
+            });
+            $(function () {
+                var login = $('r');
+                var botao = $('.dsa');
+                botao.on('click',function () {
+                    login.toggleClass("plp");
                 });
             });
         </script>
