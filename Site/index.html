@@ -12,22 +12,28 @@
 <body>
     <header>
         <nav>
-            <ul id="menu">
-                <li><img src="img/Ícone no começo.png" alt=""></li>
-                <li><a href="#qwertg" class="hover">Home</a></li>
-                <li><a href="#b" class="hover">Funcionalidades</a></li>
-                <li><a href="#c" class="hover">Planos</a></li>
-                <li><a href="#f" class="hover">FAQ</a></li>
-                <li><a href="#ola" class="hover">Contato</a></li>
-                <li></li>
-                <li><a href="https://www.instagram.com" target="blank"><img src="img/Instagram.png" alt=""></a></li>
-                <li><a href="https://www.Facebook.com" target="blank" id="juntar"><img src="img/Facebook.png" alt=""></a></li>
-                <li><a href="https://www.twitter.com" target="blank"><img src="img/Twitter.png" alt=""></a></li>
-                <li></li>
-                <li class="hove log" id="oi">Login</li>
-                <li><a href="#d" class="hove">Cadastrar-se</a></li>
-                <li><img src="img/Bandeira.png" alt=""></li>
-            </ul>
+            <div id="barrasd">
+                <img src="img/menu-alt-512.png" alt="" id="gh" class="buttom">
+                <h2 id="fr">Ponto Digital</h2>
+            </div>
+            <div class="i kj">
+                <ul id="menu">
+                    <li><img src="img/Ícone no começo.png" class="sumir" alt=""></li>
+                    <li><a href="#qwertg" class="hover">Home</a></li>
+                    <li><a href="#b" class="hover">Funcionalidades</a></li>
+                    <li><a href="#c" class="hover">Planos</a></li>
+                    <li><a href="#f" class="hover">FAQ</a></li>
+                    <li><a href="#ola" class="hover">Contato</a></li>
+                    <li id="rrr"></li>
+                    <li><a href="https://www.instagram.com" class="sumir" target="blank"><img src="img/Instagram.png" alt=""></a></li>
+                    <li><a href="https://www.Facebook.com" class="sumir" target="blank" id="juntar"><img src="img/Facebook.png" alt=""></a></li>
+                    <li><a href="https://www.twitter.com" class="sumir" target="blank"><img src="img/Twitter.png" alt=""></a></li>
+                    <li id="rrr"></li>
+                    <li class="hove log" id="oi">Login</li>
+                    <li><a href="#d" class="hove">Cadastrar-se</a></li>
+                    <li><img src="img/Bandeira.png" alt="" class="sumir"></li>
+                </ul>
+            </div>
         </nav>
         <img src="img/degrade superior.png" alt="" id="gradiente">
         <h1>Ponto Digital</h1>
@@ -302,10 +308,12 @@
         <div class="login">
             <img src="img/back-x-md.png" alt="" class="point">
             <h2>Login</h2>
-            <input type="text" placeholder="E-mail">
-            <input type="password" placeholder="Senha"><br><br><br>
-            <a href="">Esqueceu sua senha?</a><br><br><br>
-            <input type="submit" value="Enviar ">
+            <form method="GET">
+                <input type="text" placeholder="E-mail">
+                <input type="password" placeholder="Senha"><br><br><br>
+                <a href="">Esqueceu sua senha?</a><br><br><br>
+                <input type="submit" value="Enviar ">
+            </form>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
@@ -395,6 +403,26 @@
                 });
             });
         </script>
+
+        <script>
+        $(function () {
+            var login = $('.kj');
+            var botao = $('.buttom');
+            botao.on('click',function () {
+                login.toggleClass("edc");
+                login.removeClass("kj")
+            });
+        });
+        $(function () {
+            var crs = $('.i');
+            var de = $('.point');
+            de.on('click',function () {
+                crs.toggleClass("kj");
+                crs.removeClass("edc")
+            });
+        });
+    </script>
+
     </section>
     
 </body>

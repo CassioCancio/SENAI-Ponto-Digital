@@ -139,7 +139,7 @@ h3{
 }
 #b{
     position: absolute;
-    top: 84vh
+    top: 86vh
 }
 #c{
     position: absolute;
@@ -192,10 +192,8 @@ h3{
 }
 .letrass{
     font-size: 1.5em;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
     width: 80%;
-    margin: 4vh auto
+    margin: 0.5vh auto
 }
 .cinza{
     box-shadow: 1px 1px 10px #888888,
@@ -300,7 +298,7 @@ h3{
 }
 #d{
     position: absolute;
-    top: 266vh
+    top: 265vh;
 }
 #espaço{
     margin-right: 15vh
@@ -760,6 +758,9 @@ h3{
 #werty span{
     color: #000000
 }
+#barrasd{
+    display: none
+}
 #werty p{
     color: #005eb9
 }
@@ -1099,6 +1100,24 @@ h3{
         flex-direction: column;
         margin-top: 2vh
     }
+    #menu a img{
+        height: 2.75vh;
+        padding: 0 0.7vh;
+        margin: 0.9vh -3vh 0 -3vh
+    }
+    #menu > li > img{
+        height: 3.5vh;
+        margin: 0.52vh 0.5vh 0 0.5vh
+    }
+    #menu a{
+        font-size: 1em;
+        font-weight: 500;
+        padding: 0.5vh 0.75vh;
+        border-radius: 20px
+    }
+    #rrr{
+        display: none
+    }
     .flex{
         flex-direction: column
     }
@@ -1177,11 +1196,92 @@ h3{
     #sac textarea{
         width: 35vh;
     }
+    #menu a img{
+        height: 2.75vh;
+        padding: 0 0.5vh;
+        margin: 0.9vh -3vh 0 -3vh
+    }
+    #menu > li > img{
+        height: 3.5vh;
+        margin: 0.52vh 0.5vh 0 0.5vh
+    }
+    #menu a{
+        font-size: 0.8em;
+        font-weight: 500;
+        padding: 0.5vh 0.5vh;
+        border-radius: 20px
+    }
 }
 @media screen and (max-width:768px){
     #sac input{
         width: 180%;
         margin: 1.5vh auto
+    }
+    #gradiente{
+        display: none
+    }
+    #gh{
+        width: 7.5%;
+        z-index: 1000000000;
+        margin-top: 0vh;
+        margin-right: 90%
+    }
+    #menu li{
+        width: 100%;
+        margin-top: 0.5vh;
+        font-size: 1.3em
+    }
+    #menu a{
+        font-size: 0.8em;
+        font-weight: 500;
+        margin-top: 2vh;
+        padding: 0.5vh 0.5vh;
+        border-radius:0;
+        width: 100%
+    }
+    .hover,.hove {
+        margin: 0vh;
+    }
+    #fr{
+        position: fixed;
+        top: 0.2vh;
+        margin: 0;
+        left: 30%
+    }
+    .sumir{
+        display: none
+    }
+    #barrasd{
+        position: fixed;
+        top: 0%;
+        background-color: #fff;
+        box-shadow: 1px 1px 10px #888888,
+        -1px 1px #333,
+        1px -1px #333,
+        -1px -1px #333;
+        width: 100%;
+        display: block;
+    }
+    .kj{
+        display: none
+    }
+    #menu{
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        border-radius: 0;
+        top: 6.6vh;
+        transition: 1s
+    }
+    .hover,.hove{
+        margin: 2vh
+    }
+    .edc{
+        display: none;
+    }
+    h1{
+        margin-top: 7vh
     }
     .dfghj{
         display: none
@@ -1211,6 +1311,9 @@ h3{
     }
     .colu{
         margin-left: -15%
+    }
+    .kj{
+        display: none
     }
 }
 @media screen and (max-width:650px){
